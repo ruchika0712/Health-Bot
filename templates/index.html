@@ -1,0 +1,191 @@
+{% extends "base.html" %} {% block head %}
+<title> Medi-Bot </title>
+{% endblock head %} {% block hero %}
+
+<section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h1 data-aos="fade-up">What is Medi-Bot</h1>
+                <h2 data-aos="fade-up" data-aos-delay="400" style="text-align: justify;">
+                    Hello there! Welcome to Medi Bot, your ultimate companion for all things medical! I'm here to provide you with insightful information and answer any medical questions you may have. Whether it's about symptoms, medications, or general health tips, I've got you covered! Just type away, and let's navigate the world of medical insights together. How can I assist you today? Experiencing symptoms? Describe them, and I'll help predict possible conditions. Additionally, let me calculate your BMI for a better understanding of your health, and if needed, I can guide you to the nearest hospitals. Let's prioritize your well-being!
+
+                                   </h2>
+                <div data-aos="fade-up" data-aos-delay="600">
+                    <div class="text-center text-lg-start">
+                        <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                            <span>Get Started</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                <img src="static\custom\logo.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock hero %} {% block main %}
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+
+    <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+            <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="content">
+                    <h3>BMI</h3>
+                    <h2>The body mass index (BMI) is that the metric currently in use for outlining anthropometric height and weight 
+                        characteristics in adults and for classifying them into groups.</h2>
+                    <div class="text-center text-lg-start">
+                        <a href="login" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                            <span>Check BMI</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                <img src="{{ url_for('static',filename='custom/about.png') }}" class="img-fluid" alt="">
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- End About Section -->
+
+
+
+<!-- ======= Features Section ======= -->
+<section id="features" class="features">
+
+    <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+            <h2>Features</h2>
+            <p>What makes our website unique?</p>
+        </header>
+
+        <div class="row">
+
+            <div class="col-lg-6">
+                <img src="{{ url_for('static',filename='img/features.png') }}" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+                <div class="row align-self-center gy-4">
+
+                    <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                        <div class="feature-box d-flex align-items-center">
+                            <i class="bi bi-check"></i>
+                            <h3>Faster analysis</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                        <div class="feature-box d-flex align-items-center">
+                            <i class="bi bi-check"></i>
+                            <h3>Easy to use</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                        <div class="feature-box d-flex align-items-center">
+                            <i class="bi bi-check"></i>
+                            <h3>Personalized meal plans</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                        <div class="feature-box d-flex align-items-center">
+                            <i class="bi bi-check"></i>
+                            <h3>Health tips</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                        <div class="feature-box d-flex align-items-center">
+                            <i class="bi bi-check"></i>
+                            <h3>Easy to share</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                        <div class="feature-box d-flex align-items-center">
+                            <i class="bi bi-check"></i>
+                            <h3>Accurate results</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- / row -->
+
+    </div>
+
+</section>
+<!-- End Features Section -->
+
+<!-- ======= Team Section ======= -->
+<section id="team" class="team">
+
+    <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+            <h2>Team</h2>
+        </header>
+
+        <div class="row gy-6 justify-content-center">
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="static\profile\Ruchika.jpg" class="img-fluid" alt="">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Ruchika Thakur</h4>
+                        <!-- <span>18BCE2113</span> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="static\profile\Aishita.jpg" class="img-fluid" alt="">
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Aishita</h4>
+                        <!-- <span>18BCE2517</span> -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- End Team Section -->
+
+{% endblock main %}
